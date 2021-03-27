@@ -1,0 +1,12 @@
+#!sudo sh
+# sets random MAC and runs PMKID Cracker
+# place this to {termux folder}/files/usr/bin/
+
+iface="wlan0"
+path="/data/data/com.termux/files/home/pmkid/"
+
+
+ip link set $iface up
+macchanger -r $iface | grep "New"
+
+python3 $path/pmkid_crack.py -i $iface -w

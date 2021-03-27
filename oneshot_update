@@ -1,0 +1,8 @@
+# updates OneShot
+# place this to {termux folder}/files/usr/bin/
+
+path="/data/data/com.termux/files/home/wps/OneShot"
+
+
+cd $path
+git pull
