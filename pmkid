@@ -9,4 +9,4 @@ path="/data/data/com.termux/files/home/pmkid/"
 ip link set $iface up
 macchanger -r $iface | grep "New"
 
-python3 $path/pmkid_crack.py -i $iface -w
+python3 $path/pmkid_crack.py -i $iface -w $@
