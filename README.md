@@ -19,5 +19,8 @@ Included launchers for:
 - wigle_companion
   - `wigle_companion` - runs in "dump" mode, meaning it only listens for scans
   - `wigle_companionr` - runs in "real" mode, also requests scanning
+- general usage
+  - `ifup` - only sets interface up with random MAC
+  - `ifdown` - shuts interface down
 
 Thanks to @jevgenyonegin for original scripts and inspiration
