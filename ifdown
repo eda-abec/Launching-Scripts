@@ -1,0 +1,6 @@
+#!sudo sh
+# puts interface down
+
+iface="wlan0"
+
+ip link set $iface down

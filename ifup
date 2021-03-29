@@ -1,0 +1,7 @@
+#!sudo sh
+# puts interface up and sets random MAC
+
+iface="wlan0"
+
+ip link set $iface up
+macchanger -a $iface
