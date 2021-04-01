@@ -9,4 +9,4 @@ path="/data/data/com.termux/files/home/wps/wigle_companion"
 ip link set $iface up
 macchanger -r $iface | grep "New"
 
-python3 $path/main.py -i $iface -m real -f networks.db $@
+python3 $path/main.py -i $iface -m real -f networks.db -q $@
