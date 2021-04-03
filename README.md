@@ -22,5 +22,6 @@ Included launchers for:
 - general usage
   - `ifup` - only sets interface up with random MAC
   - `ifdown` - shuts the interface down
+  - `export_wps` - packs reports of OneShot, stored PINs and wigle_companion DB to a zip in Downloads folder, convenient for backups / exports
 
 Thanks to @jevgenyonegin for original scripts and inspiration
