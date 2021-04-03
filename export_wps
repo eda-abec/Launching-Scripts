@@ -1,0 +1,14 @@
+#!sh
+# packs output files of OneShot and wigle_companion to a zip file in Downloads folder, ready to be exported
+# place this to {termux folder}/files/usr/bin/
+
+dest=~/storage/downloads/
+zipname=$(date +%Y%m%d).zip
+
+# go to home, so that correct folder tree is created in zip
+cd ~
+
+zip -r $dest$zipname ./wps/OneShot/reports/ ./wps/wigle_companion/networks.db ./.suroot/.OneShot/pixiewps/
+
+# go back to previous location (from home)
+cd -
