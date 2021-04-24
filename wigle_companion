@@ -1,13 +1,13 @@
-#!sudo sh
-# sets random MAC and runs WiGLE Companion
+#!sh
+# passively runs WiGLE Companion (does not control the interface)
+# does not change MAC as it requires to up the interface
+# which would interrupt whoever is controlling it now
+# and so does not need root
 # place this to {termux folder}/files/usr/bin/
 
 iface="wlan0"
 path="/data/data/com.termux/files/home/wps/wigle_companion"
 
-
-ip link set $iface up
-macchanger -r $iface | grep "New"
 
 cd $path
 python3 main.py -i $iface -m dump -f networks.db -q $@
