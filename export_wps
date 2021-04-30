@@ -8,7 +8,11 @@ zipname=$(date +%Y%m%d).zip
 # go to home, so that correct folder tree is created in zip
 cd ~
 
-zip -r $dest$zipname ./wps/OneShot/reports/ ./wps/wigle_companion/networks.db ./.suroot/.OneShot/pixiewps/
+echo "Exporting networks: "
+cat  ./wps/OneShot/reports/stored.csv | wc -l
+echo "Exporting PINs: "
+ls -l ./.suroot/.OneShot/pixiewps/ | wc -l
+zip -r $dest$zipname ./wps/OneShot/reports/ ./wps/wigle_companion/networks.db ./.suroot/.OneShot/pixiewps/ > /dev/null
 
 # go back to previous location (from home)
 cd -
