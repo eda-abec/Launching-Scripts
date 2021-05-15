@@ -1,3 +1,4 @@
-#! bash
+#!bash
+# general purpose script to send a bell to terminal, which makes a vibration in Termux. Unlike Termux API, the vibration is immediate
 echo -ne "\a"
 
