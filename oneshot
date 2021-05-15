@@ -9,4 +9,4 @@ path="/data/data/com.termux/files/home/wps/OneShot"
 ip link set $iface up
 macchanger -r $iface | grep "New"
 
-python3 $path/oneshot.py -i $iface -K -w $@
+python3 $path/oneshot.py -i $iface -K -r -w $@
