@@ -5,14 +5,13 @@
 dest=~/storage/downloads/
 zipname=$(date +%Y%m%d).zip
 
-# go to home, so that correct folder tree is created in zip
 cd ~
 
 echo "Exporting networks: "
 cat  ./wps/OneShot/reports/stored.csv | wc -l
+zip -jr $dest$zipname ./wps/OneShot/reports/ ./wps/wigle_companion/networks.db > /dev/null
+
 echo "Exporting PINs: "
 ls -l ./.suroot/.OneShot/pixiewps/ | wc -l
-zip -r $dest$zipname ./wps/OneShot/reports/ ./wps/wigle_companion/networks.db ./.suroot/.OneShot/pixiewps/ > /dev/null
-
-# go back to previous location (from home)
-cd -
+cd .suroot/.OneShot
+zip -r $dest$zipname ./pixiewps/ > /dev/null
