@@ -1,0 +1,6 @@
+#!sh
+# prints public IP address
+# place this to {termux folder}/files/usr/bin/
+
+wget $@ -qO- http://ipecho.net/plain
+echo
