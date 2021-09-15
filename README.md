@@ -13,6 +13,7 @@ Included launchers for:
   - `oneshotb` - runs online bruteforce
   - `oneshotd` - runs online bruteforce, one attempt per 61 seconds (to prevent AP locking)
   - `oneshotf` - Pixie force mode
+  - `oneshot_webui` - runs OneShot with [web graphical interface](https://github.com/eda-abec/OneShot-WebUI)
   - `oneshot_update` - updates your OneShot (through `git pull`)
 - PMKID Cracker
   - `pmkid`
