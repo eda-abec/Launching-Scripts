@@ -1,0 +1,17 @@
+#!sudo sh
+# sets random MAC and runs OneShot in WebUI wrapper
+# place this to {termux folder}/files/usr/bin/
+
+iface="wlan0"
+path="/data/data/com.termux/files/home/wps/OneShot-WebUI"
+
+ip link set $iface up
+macchanger -r $iface | grep "New"
+
+# open web browser before since the script is running synchronously
+termux-open-url http://127.0.0.1:8080 &
+
+cd $path
+sudo python3 webui.py -i $iface -K -w $@
+
+cd -
