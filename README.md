@@ -1,11 +1,10 @@
 # Launching Scripts
-A repository containing wrapper scripts to be placed to $PATH.
+### A repository with my shortcuts for programs I use and their arguments.
 
-This allows to execute the programs from anywhere.
-
+They are to be placed to $PATH, which allows to execute the programs from anywhere.
 In Termux, the path usually is `/data/data/com.termux/files/usr/bin/`. You may need to `chmod +x` the scripts and edit paths to the actual programs.
 
-All scripts first change MAC address to random one and up the interface. Any arguments given to the launching script are passed to the actual program.
+Most of the scripts first change MAC address to random one and up the interface. Any arguments given to the launching script are passed to the actual program.
 
 Included launchers for:
 - OneShot
