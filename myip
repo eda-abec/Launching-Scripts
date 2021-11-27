@@ -4,6 +4,6 @@
  
 echo "local:"
 ip -4 -o addr show scope global | awk '{gsub(/\/.*/,"",$4); print $4}'
-echo "pulbic:"
+echo "public:"
 wget $@ -qO- http://ipecho.net/plain
 echo
