@@ -1,6 +1,9 @@
 #!sh
 # prints public IP address
 # place this to {termux folder}/files/usr/bin/
-
+ 
+echo "local:"
+ip -4 -o addr show scope global | awk '{gsub(/\/.*/,"",$4); print $4}'
+echo "pulbic:"
 wget $@ -qO- http://ipecho.net/plain
 echo
