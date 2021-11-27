@@ -24,6 +24,6 @@ Most of the scripts first change MAC address to random one and up the interface.
   - `ifdown` - shuts the interface down
   - `export_wps` - packs reports of OneShot, stored PINs and wigle_companion DB to a zip in Downloads folder, convenient for backups / exports
   - `vibrate` - general purpose script to send a bell to terminal, which makes a vibration in Termux. Unlike in Termux API, the vibration is immediate
-  - `publicip` - prints current public IP address (by web API)
+  - `myip` - prints current local and public IP address (by web API)
 
 Thanks to [@jevgenyonegin](https://github.com/jevgenyonegin) for [original scripts](https://github.com/drygdryg/OneShot/issues/24#issuecomment-683338978) and inspiration
