@@ -1,0 +1,5 @@
+#!sudo sh
+# a tool to search in saved networks. Very useful when you forget the password
+# the argument specifies a substring of searched SSID
+
+grep -A 2 "ssid=\".*$1.*" /data/misc/wifi/wpa_supplicant.conf
