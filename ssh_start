@@ -1,0 +1,10 @@
+#!sh
+# starts SSH daemon and prints IP address and port to connect to
+# (very rough parsing of IP, but it does its job)
+
+port=8022
+
+pkill sshd
+sshd -p $port
+ip a | grep "inet "
+echo "port $port"
