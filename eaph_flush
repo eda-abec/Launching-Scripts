@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 #
 # Launcher/wrapper script around Eaphammer,
-# it flushes logs immediately to disk
+# it flushes logs immediately to a file
 # (Eaphammer itself, as of version 1.13.5, saves logs only on exit, and not at all in case of an error)
 #
 # author: eda-abec
