@@ -19,6 +19,9 @@ Most of the scripts first change MAC address to random one and up the interface.
 - [wigle_companion](https://github.com/drygdryg/wigle_companion)
   - `wigle_companion` - runs in "dump" mode, meaning it only listens for scans
   - `wigle_companionr` - runs in "real" mode, also requests scanning
+- [eaphammer](https://github.com/s0lst1c3/eaphammer)
+  - `eaph_flush` - flushes output of eaphammer immediately to a file
+  - `switchere` - used to switch between SSIDs from a list in given time intervals
 - general usage
   - `ifup` - only sets interface up with random MAC
   - `ifdown` - shuts the interface down
