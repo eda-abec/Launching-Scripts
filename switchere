@@ -40,6 +40,11 @@ user_interrupt () {
 }
 trap user_interrupt SIGINT SIGTERM
 
+echo ""
+echo "[switchere] looping over SSIDs:"
+cat $1
+echo ""
+
 while $continue
 do
     while IFS=";", read -r ssid time && $continue
